@@ -102,7 +102,44 @@
         }
       }
       
-   
+     /* main section styles */
+
+     .img-feature{
+       max-width:1370px;
+       margin:0 auto;
+       display:flex;
+       align-items:center;
+       margin-top:30px;
+
+       
+     }
+      .img-container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+        margin-top:10px;
+        margin-right:60px;
+      }
+     
+      /* responsive main section */
+
+      @media screen and (max-width:550px){
+        .img-container{
+           grid-template-columns:repeat(1,1fr);
+          
+        }
+        .img-feature{
+          flex-direction:column;
+        }
+        .features{
+           display:flex;
+           flex-direction:column;
+           justify-content:center;
+           align-items:center;
+           
+        }
+      }
+
     
   
 
